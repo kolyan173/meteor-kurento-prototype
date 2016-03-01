@@ -1,0 +1,35 @@
+<template name="hello">
+
+    <div class="hello">
+        <article>
+            <div class="github-stargazers"></div>
+            <!-- just copy this <section> and next script -->
+            <section class="experiment">
+                <section>
+                    <div class="form-group col-md-8">
+                        <input type="text"
+                            id="broadcast-name"
+                            class="form-control"
+                            placeholder="Enter stream name"
+                        >
+                    </div>
+                    <button id="setup-new-broadcast" class="btn btn-primary">
+                        Setup New Broadcast
+                    </button>
+                    <button id="stop-streaming" class="btn btn-dafault">
+                        STOP
+                    </button>
+                </section>
+
+                <!-- list of all available broadcasting rooms -->
+                <table style="width: 100%;" id="rooms-list"></table>
+
+                <!-- local/remote videos container -->
+                <div id="videos-container">
+                    <video id="video" autoplay width="640px" height="480px" style="background: black"></video>
+                </div>
+            </section>
+        </article>
+    </div>
+
+</template>
